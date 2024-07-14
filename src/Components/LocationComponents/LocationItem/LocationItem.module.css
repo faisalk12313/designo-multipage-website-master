@@ -1,0 +1,146 @@
+.location_item_image_canada {
+    background-image: url('../../../assets/locations/desktop/image-map-canada.png');
+}
+
+.location_item_image_aus {
+    background-image: url('../../../assets/locations/desktop/image-map-australia.png');
+}
+
+.location_item_image_uk {
+    background-image: url('../../../assets/locations/desktop/image-map-united-kingdom.png');
+}
+
+.location_item_image {
+    width: 22.24vw;
+    height: 34.71vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 14px;
+}
+
+.location_item_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.location_item_reverse {
+    flex-direction: row-reverse;
+}
+
+.location_item_content_container {
+    background-color: #FDF3F0;
+    height: 34.71vh;
+    border-radius: 14px;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../../../assets/shared/desktop/bg-pattern-two-circles.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.location_item_content_sub_container {
+    width: 60%;
+}
+
+.location_item_title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0px;
+    /* identical to box height, or 120% */
+    color: #E7816B;
+    margin-bottom: 1vh;
+}
+
+.location_item_address_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.location_item_address_container {
+    width: 50%;
+}
+
+.location_item_bold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1300px) {
+    .location_item_image_canada {
+        background-image: url('../../../assets/locations/tablet/image-map-canada.png');
+    }
+
+    .location_item_image_aus {
+        background-image: url('../../../assets/locations/tablet/image-map-australia.png');
+    }
+
+    .location_item_image_uk {
+        background-image: url('../../../assets/locations/tablet/image-map-uk.png');
+    }
+
+    .location_item_container {
+        flex-direction: column-reverse;
+        margin-bottom: 8vh;
+    }
+
+    .location_item_image {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .location_item_content_container {
+        width: 100%;
+    }
+
+    .location_item_content_sub_container {
+        width: 83%;
+    }
+
+    .location_item_address_main_container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .location_item_container {
+        flex-direction: column-reverse;
+        margin-bottom: 8vh;
+    }
+
+    .location_item_image {
+        margin-bottom: 0vh;
+        border-radius: 0px;
+    }
+
+    .location_item_content_container {
+        border-radius: 0px;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .location_item_content_sub_container {
+        text-align: center;
+    }
+
+    .location_item_address_main_container {
+        flex-direction: column;
+    }
+
+    .location_item_address_container {
+        width: 100%;
+    }
+
+    .location_item_title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
